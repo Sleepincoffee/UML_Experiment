@@ -6179,23 +6179,6 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5728C0FF0290"
-				compartment 	(object Compartment
-				    Parent_View 	@289
-				    location   	(473, 221)
-				    font       	(object Font
-					size       	10
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    icon_style 	"Icon"
-				    fill_color 	13434879
-				    anchor     	2
-				    nlines     	9
-				    max_width  	363)
 				width      	448
 				height     	536
 				annotation 	8
@@ -6226,23 +6209,6 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5728C1780226"
-				compartment 	(object Compartment
-				    Parent_View 	@290
-				    location   	(1403, 146)
-				    font       	(object Font
-					size       	10
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    icon_style 	"Icon"
-				    fill_color 	13434879
-				    anchor     	2
-				    nlines     	12
-				    max_width  	250)
 				width      	316
 				height     	686
 				annotation 	8
@@ -6273,23 +6239,6 @@
 				line_color 	3342489
 				fill_color 	13434879
 				quidu      	"5728C1E70212"
-				compartment 	(object Compartment
-				    Parent_View 	@291
-				    location   	(495, 952)
-				    font       	(object Font
-					size       	10
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    icon_style 	"Icon"
-				    fill_color 	13434879
-				    anchor     	2
-				    nlines     	6
-				    max_width  	325)
 				width      	404
 				height     	386
 				annotation 	8
@@ -6307,6 +6256,885 @@
 				quidu      	"5728C63702EB"
 				client     	@289
 				supplier   	@291
+				line_style 	0)))))
+	    (object Class_Category "exp8_PackageView"
+		quid       	"573126E2009D"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class_Category "VO"
+			quid       	"573127280329"
+			visible_categories 	(list visibility_relationship_list
+			    (object Visibility_Relationship
+				quid       	"573127AF03A5"
+				supplier   	"Logical View::exp8_PackageView::Service"
+				quidu      	"573127370230")
+			    (object Visibility_Relationship
+				quid       	"57312F3100D6"
+				supplier   	"Logical View::exp8_PackageView::Action"
+				quidu      	"57312EF60009"))
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class "ShopCarVO"
+				quid       	"57312F680284"))
+			logical_presentations 	(list unit_reference_list
+			    (object ClassDiagram "Main"
+				quid       	"573127C00042"
+				title      	"Main"
+				zoom       	100
+				max_height 	28350
+				max_width  	21600
+				origin_x   	0
+				origin_y   	0
+				items      	(list diagram_item_list
+				    (object ClassView "Class" "Logical View::exp8_PackageView::VO::ShopCarVO" @294
+					ShowCompartmentStereotypes 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(848, 480)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@294
+					    location   	(700, 429)
+					    fill_color 	13434879
+					    nlines     	1
+					    max_width  	296
+					    justify    	0
+					    label      	"ShopCarVO")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"57312F680284"
+					width      	314
+					height     	126
+					annotation 	8
+					autoResize 	TRUE)))))
+		    (object Class_Category "Service"
+			quid       	"573127370230"
+			visible_categories 	(list visibility_relationship_list
+			    (object Visibility_Relationship
+				quid       	"573127B201BF"
+				supplier   	"Logical View::exp8_PackageView::DAO"
+				quidu      	"57312759006C"))
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class "UserService"
+				quid       	"573130610051"
+				operations 	(list Operations
+				    (object Operation "login"
+					quid       	"5731308502FC"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "insert"
+					quid       	"573130890383"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "delete"
+					quid       	"5731308D02DF"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "update"
+					quid       	"57313090038E"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "query"
+					quid       	"573131270327"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)))
+			    (object Class "ShopCarService"
+				quid       	"57313067003B"
+				operations 	(list Operations
+				    (object Operation "insertProduct"
+					quid       	"573130BD037E"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "updateProduct"
+					quid       	"573130C603B3"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "deleteProduct"
+					quid       	"573130CD033B"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)))
+			    (object Class "OrderService"
+				quid       	"5731307503AD"
+				operations 	(list Operations
+				    (object Operation "insertOrder"
+					quid       	"573130DA033A"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "updateOrder"
+					quid       	"573130E00049"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "deleteOrder"
+					quid       	"573130E70049"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "paypal"
+					quid       	"573130ED020B"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "setStatus"
+					quid       	"573130FF0347"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0))))
+			logical_presentations 	(list unit_reference_list
+			    (object ClassDiagram "Main"
+				quid       	"57312EA5019D"
+				title      	"Main"
+				zoom       	100
+				max_height 	28350
+				max_width  	21600
+				origin_x   	0
+				origin_y   	0
+				items      	(list diagram_item_list
+				    (object ClassView "Class" "Logical View::exp8_PackageView::Service::UserService" @295
+					ShowCompartmentStereotypes 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(352, 416)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@295
+					    location   	(199, 235)
+					    fill_color 	13434879
+					    nlines     	1
+					    max_width  	306
+					    justify    	0
+					    label      	"UserService")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"573130610051"
+					compartment 	(object Compartment
+					    Parent_View 	@295
+					    location   	(199, 296)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    icon_style 	"Icon"
+					    fill_color 	13434879
+					    anchor     	2
+					    nlines     	6
+					    max_width  	197)
+					width      	324
+					height     	386
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Logical View::exp8_PackageView::Service::ShopCarService" @296
+					ShowCompartmentStereotypes 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(800, 400)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@296
+					    location   	(599, 269)
+					    fill_color 	13434879
+					    nlines     	1
+					    max_width  	402
+					    justify    	0
+					    label      	"ShopCarService")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"57313067003B"
+					compartment 	(object Compartment
+					    Parent_View 	@296
+					    location   	(599, 330)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    icon_style 	"Icon"
+					    fill_color 	13434879
+					    anchor     	2
+					    nlines     	4
+					    max_width  	338)
+					width      	420
+					height     	286
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Logical View::exp8_PackageView::Service::OrderService" @297
+					ShowCompartmentStereotypes 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1280, 416)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@297
+					    location   	(1103, 235)
+					    fill_color 	13434879
+					    nlines     	1
+					    max_width  	354
+					    justify    	0
+					    label      	"OrderService")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5731307503AD"
+					compartment 	(object Compartment
+					    Parent_View 	@297
+					    location   	(1103, 296)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    icon_style 	"Icon"
+					    fill_color 	13434879
+					    anchor     	2
+					    nlines     	6
+					    max_width  	297)
+					width      	372
+					height     	386
+					annotation 	8
+					autoResize 	TRUE)))))
+		    (object Class_Category "DAO"
+			quid       	"57312759006C"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class "UserDao"
+				quid       	"5731315F0241"
+				operations 	(list Operations
+				    (object Operation "login"
+					quid       	"5731316C0394"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "insert"
+					quid       	"5731317100AC"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "update"
+					quid       	"573131740060"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "delete"
+					quid       	"5731317700E7"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)))
+			    (object Class "ShopcarDao"
+				quid       	"5731317B010B"
+				operations 	(list Operations
+				    (object Operation "insertProduct"
+					quid       	"573131AD0080"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "updateProduct"
+					quid       	"573131B2039F"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "deleteProduct"
+					quid       	"573131B80325"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)))
+			    (object Class "ORderDao"
+				quid       	"573131C302A9"
+				operations 	(list Operations
+				    (object Operation "insert"
+					quid       	"573131D00117"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "update"
+					quid       	"573131D5020E"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "delete"
+					quid       	"573131D90106"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "paypal"
+					quid       	"573131DC02EB"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0)
+				    (object Operation "setStatus"
+					quid       	"573131E101D0"
+					concurrency 	"Sequential"
+					opExportControl 	"Public"
+					uid        	0))))
+			logical_presentations 	(list unit_reference_list
+			    (object ClassDiagram "Main"
+				quid       	"57312EA70150"
+				title      	"Main"
+				zoom       	100
+				max_height 	28350
+				max_width  	21600
+				origin_x   	0
+				origin_y   	0
+				items      	(list diagram_item_list
+				    (object ClassView "Class" "Logical View::exp8_PackageView::DAO::UserDao" @298
+					ShowCompartmentStereotypes 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(368, 384)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@298
+					    location   	(249, 228)
+					    fill_color 	13434879
+					    nlines     	1
+					    max_width  	238
+					    justify    	0
+					    label      	"UserDao")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5731315F0241"
+					compartment 	(object Compartment
+					    Parent_View 	@298
+					    location   	(249, 289)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    icon_style 	"Icon"
+					    fill_color 	13434879
+					    anchor     	2
+					    nlines     	5
+					    max_width  	197)
+					width      	256
+					height     	336
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Logical View::exp8_PackageView::DAO::ShopcarDao" @299
+					ShowCompartmentStereotypes 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(864, 368)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@299
+					    location   	(663, 237)
+					    fill_color 	13434879
+					    nlines     	1
+					    max_width  	402
+					    justify    	0
+					    label      	"ShopcarDao")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5731317B010B"
+					compartment 	(object Compartment
+					    Parent_View 	@299
+					    location   	(663, 298)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    icon_style 	"Icon"
+					    fill_color 	13434879
+					    anchor     	2
+					    nlines     	4
+					    max_width  	338)
+					width      	420
+					height     	286
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Logical View::exp8_PackageView::DAO::ORderDao" @300
+					ShowCompartmentStereotypes 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1328, 416)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@300
+					    location   	(1179, 235)
+					    fill_color 	13434879
+					    nlines     	1
+					    max_width  	298
+					    justify    	0
+					    label      	"ORderDao")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"573131C302A9"
+					compartment 	(object Compartment
+					    Parent_View 	@300
+					    location   	(1179, 296)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    icon_style 	"Icon"
+					    fill_color 	13434879
+					    anchor     	2
+					    nlines     	6
+					    max_width  	250)
+					width      	316
+					height     	386
+					annotation 	8
+					autoResize 	TRUE)))))
+		    (object Class_Category "Module"
+			quid       	"57312E8D02E3"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class "NewClass"
+				quid       	"57312F9300E1")
+			    (object Class "User"
+				quid       	"57312FA600FC")
+			    (object Class "ShopCar"
+				quid       	"57312FB40387")
+			    (object Class "Order"
+				quid       	"57312FD40329"))
+			logical_presentations 	(list unit_reference_list
+			    (object ClassDiagram "Main"
+				quid       	"57312F910337"
+				title      	"Main"
+				zoom       	100
+				max_height 	28350
+				max_width  	21600
+				origin_x   	0
+				origin_y   	0
+				items      	(list diagram_item_list
+				    (object ClassView "Class" "Logical View::exp8_PackageView::Module::User" @301
+					ShowCompartmentStereotypes 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(608, 432)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@301
+					    location   	(512, 381)
+					    fill_color 	13434879
+					    nlines     	1
+					    max_width  	192
+					    justify    	0
+					    label      	"User")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"57312FA600FC"
+					width      	210
+					height     	126
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Logical View::exp8_PackageView::Module::ShopCar" @302
+					ShowCompartmentStereotypes 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(928, 432)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@302
+					    location   	(819, 380)
+					    fill_color 	13434879
+					    nlines     	1
+					    max_width  	218
+					    justify    	0
+					    label      	"ShopCar")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"57312FB40387"
+					width      	236
+					height     	128
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Logical View::exp8_PackageView::Module::Order" @303
+					ShowCompartmentStereotypes 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1248, 432)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@303
+					    location   	(1152, 381)
+					    fill_color 	13434879
+					    nlines     	1
+					    max_width  	192
+					    justify    	0
+					    label      	"Order")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"57312FD40329"
+					width      	210
+					height     	126
+					annotation 	8
+					autoResize 	TRUE)))))
+		    (object Class_Category "Action"
+			quid       	"57312EF60009"
+			visible_categories 	(list visibility_relationship_list
+			    (object Visibility_Relationship
+				quid       	"57312F360322"
+				supplier   	"Logical View::exp8_PackageView::Module"
+				quidu      	"57312E8D02E3")
+			    (object Visibility_Relationship
+				quid       	"57312F390376"
+				supplier   	"Logical View::exp8_PackageView::Service"
+				quidu      	"573127370230"))
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class "UserAction"
+				quid       	"57312FF30310"
+				class_attributes 	(list class_attribute_list
+				    (object ClassAttribute "generateOrder"
+					quid       	"57312FFF0335")
+				    (object ClassAttribute "cancelOrder"
+					quid       	"5731300C010D")
+				    (object ClassAttribute "EditOrder"
+					quid       	"57313013037A")
+				    (object ClassAttribute "Paypal"
+					quid       	"5731301E0380")
+				    (object ClassAttribute "addProduct"
+					quid       	"5731302F0370")
+				    (object ClassAttribute "ponerProduct"
+					quid       	"5731303D008B")
+				    (object ClassAttribute "EditProduct"
+					quid       	"5731304D00A2"))))
+			logical_presentations 	(list unit_reference_list
+			    (object ClassDiagram "Main"
+				quid       	"57312FF1033F"
+				title      	"Main"
+				zoom       	100
+				max_height 	28350
+				max_width  	21600
+				origin_x   	0
+				origin_y   	0
+				items      	(list diagram_item_list
+				    (object ClassView "Class" "Logical View::exp8_PackageView::Action::UserAction" @304
+					ShowCompartmentStereotypes 	TRUE
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(816, 512)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@304
+					    location   	(634, 281)
+					    fill_color 	13434879
+					    nlines     	1
+					    max_width  	364
+					    justify    	0
+					    label      	"UserAction")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"57312FF30310"
+					compartment 	(object Compartment
+					    Parent_View 	@304
+					    location   	(634, 342)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    icon_style 	"Icon"
+					    fill_color 	13434879
+					    anchor     	2
+					    nlines     	8
+					    max_width  	307)
+					width      	382
+					height     	486
+					annotation 	8
+					autoResize 	TRUE))))))
+		logical_presentations 	(list unit_reference_list
+		    (object ClassDiagram "Main"
+			quid       	"57312EE50343"
+			title      	"Main"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object CategoryView "Logical View::exp8_PackageView::DAO" @305
+				location   	(2128, 720)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@305
+				    location   	(1984, 636)
+				    fill_color 	13434879
+				    nlines     	2
+				    max_width  	288
+				    justify    	0
+				    label      	"DAO")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"57312759006C"
+				width      	300
+				height     	180)
+			    (object CategoryView "Logical View::exp8_PackageView::Module" @306
+				location   	(528, 720)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@306
+				    location   	(384, 636)
+				    fill_color 	13434879
+				    nlines     	2
+				    max_width  	288
+				    justify    	0
+				    label      	"Module")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"57312E8D02E3"
+				width      	300
+				height     	180)
+			    (object CategoryView "Logical View::exp8_PackageView::Service" @307
+				location   	(1568, 720)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@307
+				    location   	(1424, 636)
+				    fill_color 	13434879
+				    nlines     	2
+				    max_width  	288
+				    justify    	0
+				    label      	"Service")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"573127370230"
+				width      	300
+				height     	180)
+			    (object ImportView "" @308
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"573127B201BF"
+				client     	@307
+				supplier   	@305
+				line_style 	0)
+			    (object CategoryView "Logical View::exp8_PackageView::VO" @309
+				location   	(1040, 288)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@309
+				    location   	(896, 204)
+				    fill_color 	13434879
+				    nlines     	2
+				    max_width  	288
+				    justify    	0
+				    label      	"VO")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"573127280329"
+				width      	300
+				height     	180)
+			    (object CategoryView "Logical View::exp8_PackageView::Action" @310
+				location   	(1040, 720)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@310
+				    location   	(896, 636)
+				    fill_color 	13434879
+				    nlines     	2
+				    max_width  	288
+				    justify    	0
+				    label      	"Action")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"57312EF60009"
+				width      	300
+				height     	180)
+			    (object ImportView "" @311
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"57312F3100D6"
+				client     	@309
+				supplier   	@310
+				line_style 	0)
+			    (object ImportView "" @312
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"57312F360322"
+				client     	@310
+				supplier   	@306
+				line_style 	0)
+			    (object ImportView "" @313
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"57312F390376"
+				client     	@310
+				supplier   	@307
 				line_style 	0))))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Package Hierarchy"
@@ -6316,9 +7144,9 @@
 		max_height 	28350
 		max_width  	21600
 		origin_x   	0
-		origin_y   	0
+		origin_y   	1725
 		items      	(list diagram_item_list
-		    (object ClassView "Class" "Logical View::exp1_Puzzle::River" @294
+		    (object ClassView "Class" "Logical View::exp1_Puzzle::River" @314
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -6333,7 +7161,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@294
+			    Parent_View 	@314
 			    location   	(1496, 150)
 			    fill_color 	13434879
 			    nlines     	1
@@ -6348,7 +7176,7 @@
 			height     	172
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::exp1_Puzzle::Priest" @295
+		    (object ClassView "Class" "Logical View::exp1_Puzzle::Priest" @315
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -6363,7 +7191,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@295
+			    Parent_View 	@315
 			    location   	(632, 662)
 			    fill_color 	13434879
 			    nlines     	1
@@ -6378,7 +7206,7 @@
 			height     	172
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::exp1_Puzzle::Boat" @296
+		    (object ClassView "Class" "Logical View::exp1_Puzzle::Boat" @316
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -6393,7 +7221,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@296
+			    Parent_View 	@316
 			    location   	(632, 150)
 			    fill_color 	13434879
 			    nlines     	1
@@ -6408,7 +7236,7 @@
 			height     	172
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "passRiver" @297
+		    (object AssociationViewNew "passRiver" @317
 			location   	(1231, 224)
 			font       	(object Font
 			    size       	10
@@ -6419,8 +7247,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @298
-			    Parent_View 	@297
+			label      	(object SegLabel @318
+			    Parent_View 	@317
 			    location   	(1231, 165)
 			    font       	(object Font
 				size       	10
@@ -6444,25 +7272,25 @@
 			line_color 	3342489
 			quidu      	"5703DE3102A4"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$82" @299
-				Parent_View 	@297
+			    (object RoleView "$UNNAMED$82" @319
+				Parent_View 	@317
 				location   	(463, 0)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5703DE320241"
-				client     	@297
-				supplier   	@294
+				client     	@317
+				supplier   	@314
 				line_style 	0)
-			    (object RoleView "$UNNAMED$83" @300
-				Parent_View 	@297
+			    (object RoleView "$UNNAMED$83" @320
+				Parent_View 	@317
 				location   	(463, 0)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5703DE320243"
-				client     	@297
-				supplier   	@296
+				client     	@317
+				supplier   	@316
 				line_style 	0)))
-		    (object AssociationViewNew "getin" @301
+		    (object AssociationViewNew "getin" @321
 			location   	(800, 479)
 			font       	(object Font
 			    size       	10
@@ -6473,8 +7301,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @302
-			    Parent_View 	@301
+			label      	(object SegLabel @322
+			    Parent_View 	@321
 			    location   	(800, 420)
 			    font       	(object Font
 				size       	10
@@ -6498,8 +7326,8 @@
 			line_color 	3342489
 			quidu      	"5703DE2702DB"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$77" @303
-				Parent_View 	@301
+			    (object RoleView "$UNNAMED$77" @323
+				Parent_View 	@321
 				location   	(0, -257)
 				font       	(object Font
 				    size       	10
@@ -6510,8 +7338,8 @@
 				    strike     	FALSE
 				    color      	0
 				    default_color 	TRUE)
-				label      	(object SegLabel @304
-				    Parent_View 	@303
+				label      	(object SegLabel @324
+				    Parent_View 	@323
 				    location   	(759, 345)
 				    font       	(object Font
 					size       	10
@@ -6535,11 +7363,11 @@
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5703DE280265"
-				client     	@301
-				supplier   	@296
+				client     	@321
+				supplier   	@316
 				line_style 	0
-				label      	(object SegLabel @305
-				    Parent_View 	@303
+				label      	(object SegLabel @325
+				    Parent_View 	@323
 				    location   	(854, 328)
 				    font       	(object Font
 					size       	10
@@ -6559,8 +7387,8 @@
 				    pctDist    	0.900000
 				    height     	54
 				    orientation 	1))
-			    (object RoleView "$UNNAMED$78" @306
-				Parent_View 	@301
+			    (object RoleView "$UNNAMED$78" @326
+				Parent_View 	@321
 				location   	(0, -257)
 				font       	(object Font
 				    size       	10
@@ -6574,11 +7402,11 @@
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5703DE280267"
-				client     	@301
-				supplier   	@295
+				client     	@321
+				supplier   	@315
 				line_style 	0
-				label      	(object SegLabel @307
-				    Parent_View 	@306
+				label      	(object SegLabel @327
+				    Parent_View 	@326
 				    location   	(854, 631)
 				    font       	(object Font
 					size       	10
@@ -6598,7 +7426,7 @@
 				    pctDist    	0.900000
 				    height     	54
 				    orientation 	0))))
-		    (object ClassView "Class" "Logical View::exp1_Puzzle::Puzzle" @308
+		    (object ClassView "Class" "Logical View::exp1_Puzzle::Puzzle" @328
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -6613,7 +7441,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@308
+			    Parent_View 	@328
 			    location   	(1128, 1158)
 			    fill_color 	13434879
 			    nlines     	1
@@ -6628,14 +7456,14 @@
 			height     	172
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "$UNNAMED$66" @309
+		    (object AssociationViewNew "$UNNAMED$66" @329
 			location   	(1047, 983)
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5703DD640118"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$67" @310
-				Parent_View 	@309
+			    (object RoleView "$UNNAMED$67" @330
+				Parent_View 	@329
 				location   	(455, 439)
 				font       	(object Font
 				    size       	10
@@ -6649,11 +7477,11 @@
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5703DD6403D5"
-				client     	@309
-				supplier   	@308
+				client     	@329
+				supplier   	@328
 				line_style 	0
-				label      	(object SegLabel @311
-				    Parent_View 	@310
+				label      	(object SegLabel @331
+				    Parent_View 	@330
 				    location   	(1230, 1091)
 				    font       	(object Font
 					size       	10
@@ -6673,8 +7501,8 @@
 				    pctDist    	0.900000
 				    height     	54
 				    orientation 	0))
-			    (object RoleView "$UNNAMED$68" @312
-				Parent_View 	@309
+			    (object RoleView "$UNNAMED$68" @332
+				Parent_View 	@329
 				location   	(455, 439)
 				font       	(object Font
 				    size       	10
@@ -6688,11 +7516,11 @@
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5703DD6403D7"
-				client     	@309
-				supplier   	@295
+				client     	@329
+				supplier   	@315
 				line_style 	0
-				label      	(object SegLabel @313
-				    Parent_View 	@312
+				label      	(object SegLabel @333
+				    Parent_View 	@332
 				    location   	(940, 801)
 				    font       	(object Font
 					size       	10
@@ -6712,7 +7540,7 @@
 				    pctDist    	0.900000
 				    height     	54
 				    orientation 	1))))
-		    (object ClassView "Class" "Logical View::exp1_Puzzle::Devil" @314
+		    (object ClassView "Class" "Logical View::exp1_Puzzle::Devil" @334
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -6727,7 +7555,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@314
+			    Parent_View 	@334
 			    location   	(1480, 662)
 			    fill_color 	13434879
 			    nlines     	1
@@ -6742,7 +7570,7 @@
 			height     	172
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "kill" @315
+		    (object AssociationViewNew "kill" @335
 			location   	(1223, 736)
 			font       	(object Font
 			    size       	10
@@ -6753,8 +7581,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @316
-			    Parent_View 	@315
+			label      	(object SegLabel @336
+			    Parent_View 	@335
 			    location   	(1223, 677)
 			    font       	(object Font
 				size       	10
@@ -6778,25 +7606,25 @@
 			line_color 	3342489
 			quidu      	"5703DDE40040"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$75" @317
-				Parent_View 	@315
+			    (object RoleView "$UNNAMED$75" @337
+				Parent_View 	@335
 				location   	(-105, 320)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5703DDE40267"
-				client     	@315
-				supplier   	@295
+				client     	@335
+				supplier   	@315
 				line_style 	0)
-			    (object RoleView "$UNNAMED$76" @318
-				Parent_View 	@315
+			    (object RoleView "$UNNAMED$76" @338
+				Parent_View 	@335
 				location   	(-105, 320)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5703DDE40271"
-				client     	@315
-				supplier   	@314
+				client     	@335
+				supplier   	@334
 				line_style 	0)))
-		    (object AssociationViewNew "$UNNAMED$79" @319
+		    (object AssociationViewNew "$UNNAMED$79" @339
 			location   	(1222, 479)
 			font       	(object Font
 			    size       	10
@@ -6807,8 +7635,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @320
-			    Parent_View 	@319
+			label      	(object SegLabel @340
+			    Parent_View 	@339
 			    location   	(1222, 420)
 			    font       	(object Font
 				size       	10
@@ -6833,8 +7661,8 @@
 			line_color 	3342489
 			quidu      	"5703DE2D015D"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$80" @321
-				Parent_View 	@319
+			    (object RoleView "$UNNAMED$80" @341
+				Parent_View 	@339
 				location   	(-426, -257)
 				font       	(object Font
 				    size       	10
@@ -6848,11 +7676,11 @@
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5703DE2E014B"
-				client     	@319
-				supplier   	@296
+				client     	@339
+				supplier   	@316
 				line_style 	0
-				label      	(object SegLabel @322
-				    Parent_View 	@321
+				label      	(object SegLabel @342
+				    Parent_View 	@341
 				    location   	(998, 282)
 				    font       	(object Font
 					size       	10
@@ -6872,8 +7700,8 @@
 				    pctDist    	0.900000
 				    height     	54
 				    orientation 	1))
-			    (object RoleView "$UNNAMED$81" @323
-				Parent_View 	@319
+			    (object RoleView "$UNNAMED$81" @343
+				Parent_View 	@339
 				location   	(-426, -257)
 				font       	(object Font
 				    size       	10
@@ -6887,11 +7715,11 @@
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5703DE2E014D"
-				client     	@319
-				supplier   	@314
+				client     	@339
+				supplier   	@334
 				line_style 	0
-				label      	(object SegLabel @324
-				    Parent_View 	@323
+				label      	(object SegLabel @344
+				    Parent_View 	@343
 				    location   	(1504, 587)
 				    font       	(object Font
 					size       	10
@@ -6911,14 +7739,14 @@
 				    pctDist    	0.900000
 				    height     	54
 				    orientation 	0))))
-		    (object AssociationViewNew "$UNNAMED$84" @325
+		    (object AssociationViewNew "$UNNAMED$84" @345
 			location   	(1471, 983)
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5703E3B00062"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$85" @326
-				Parent_View 	@325
+			    (object RoleView "$UNNAMED$85" @346
+				Parent_View 	@345
 				location   	(-177, 247)
 				font       	(object Font
 				    size       	10
@@ -6932,11 +7760,11 @@
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5703E3B10172"
-				client     	@325
-				supplier   	@308
+				client     	@345
+				supplier   	@328
 				line_style 	0
-				label      	(object SegLabel @327
-				    Parent_View 	@326
+				label      	(object SegLabel @347
+				    Parent_View 	@346
 				    location   	(1411, 1160)
 				    font       	(object Font
 					size       	10
@@ -6956,8 +7784,8 @@
 				    pctDist    	0.900000
 				    height     	54
 				    orientation 	0))
-			    (object RoleView "$UNNAMED$86" @328
-				Parent_View 	@325
+			    (object RoleView "$UNNAMED$86" @348
+				Parent_View 	@345
 				location   	(-177, 247)
 				font       	(object Font
 				    size       	10
@@ -6971,11 +7799,11 @@
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5703E3B10174"
-				client     	@325
-				supplier   	@314
+				client     	@345
+				supplier   	@334
 				line_style 	0
-				label      	(object SegLabel @329
-				    Parent_View 	@328
+				label      	(object SegLabel @349
+				    Parent_View 	@348
 				    location   	(1618, 869)
 				    font       	(object Font
 					size       	10
@@ -6994,7 +7822,32 @@
 				    label      	"1"
 				    pctDist    	0.900000
 				    height     	54
-				    orientation 	1))))))
+				    orientation 	1))))
+		    (object CategoryView "Logical View::exp8_PackageView" @350
+			location   	(1184, 1952)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@350
+			    location   	(1040, 1868)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"exp8_PackageView")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"573126E2009D"
+			width      	300
+			height     	180)))
 	    (object ClassDiagram "Legend"
 		quid       	"3E53E9F60392"
 		title      	"Legend"
@@ -7004,7 +7857,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object Label @330
+		    (object Label @351
 			location   	(512, 144)
 			font       	(object Font
 			    size       	12
@@ -7018,7 +7871,7 @@
 			nlines     	1
 			max_width  	1006
 			label      	"Java 2 Platform, Standard Edition - V 1.4.1")
-		    (object NoteView @331
+		    (object NoteView @352
 			location   	(304, 448)
 			font       	(object Font
 			    size       	10
@@ -7030,7 +7883,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@331
+			    Parent_View 	@352
 			    location   	(141, 388)
 			    fill_color 	13434879
 			    nlines     	2
@@ -7040,7 +7893,7 @@
 			fill_color 	16744448
 			width      	350
 			height     	132)
-		    (object NoteView @332
+		    (object NoteView @353
 			location   	(752, 448)
 			font       	(object Font
 			    size       	10
@@ -7052,7 +7905,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@332
+			    Parent_View 	@353
 			    location   	(589, 388)
 			    fill_color 	13434879
 			    nlines     	2
@@ -7062,7 +7915,7 @@
 			fill_color 	8421631
 			width      	350
 			height     	132)
-		    (object NoteView @333
+		    (object NoteView @354
 			location   	(1200, 448)
 			font       	(object Font
 			    size       	10
@@ -7074,7 +7927,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@333
+			    Parent_View 	@354
 			    location   	(1037, 388)
 			    fill_color 	13434879
 			    nlines     	2
@@ -7084,7 +7937,7 @@
 			fill_color 	12632256
 			width      	350
 			height     	132)
-		    (object NoteView @334
+		    (object NoteView @355
 			location   	(1648, 448)
 			font       	(object Font
 			    size       	10
@@ -7096,7 +7949,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@334
+			    Parent_View 	@355
 			    location   	(1485, 388)
 			    nlines     	2
 			    max_width  	290
@@ -7127,7 +7980,177 @@
 		is_unit    	TRUE
 		is_loaded  	FALSE
 		file_name  	"$FRAMEWORK_PATH\\shared components\\j2se_1_4_org.sub"
-		quid       	"3E400BDC023B"))
+		quid       	"3E400BDC023B")
+	    (object SubSystem "exp9"
+		quid       	"5731325A00E3"
+		physical_models 	(list unit_reference_list
+		    (object module "shopcar" "PackageType" "Specification"
+			quid       	"57313290034E"
+			stereotype 	"Package Specification"
+			visible_modules 	(list dependency_list
+			    (object Module_Visibility_Relationship
+				quid       	"573132F4029D"
+				supplier   	"Component View::exp9::order"
+				quidu      	"573132B40179"
+				supplier_is_spec 	TRUE)
+			    (object Module_Visibility_Relationship
+				quid       	"573132FB009F"
+				supplier   	"Component View::exp9::warehouse"
+				quidu      	"573132CB037B"
+				supplier_is_spec 	TRUE)
+			    (object Module_Visibility_Relationship
+				quid       	"573132FE00DF"
+				supplier   	"Component View::exp9::paypal"
+				quidu      	"573132D8031F"
+				supplier_is_spec 	TRUE))
+			language   	"")
+		    (object module "order" "PackageType" "Specification"
+			quid       	"573132B40179"
+			stereotype 	"Package Specification"
+			language   	"")
+		    (object module "warehouse" "PackageType" "Specification"
+			quid       	"573132CB037B"
+			stereotype 	"Package Specification"
+			language   	"")
+		    (object module "paypal" "PackageType" "Specification"
+			quid       	"573132D8031F"
+			stereotype 	"Package Specification"
+			language   	""))
+		physical_presentations 	(list unit_reference_list
+		    (object Module_Diagram "Main"
+			quid       	"5731326B00D4"
+			title      	"Main"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object ModView "Component View::exp9::shopcar" "PackageType" "Specification" @356
+				location   	(1344, 256)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@356
+				    location   	(1282, 60)
+				    anchor_loc 	3
+				    nlines     	1
+				    max_width  	549
+				    label      	"shopcar")
+				icon       	"Package Specification"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"57313290034E"
+				autoResize 	TRUE
+				width      	282
+				height     	312)
+			    (object ModView "Component View::exp9::order" "PackageType" "Specification" @357
+				location   	(736, 816)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@357
+				    location   	(674, 620)
+				    anchor_loc 	3
+				    nlines     	1
+				    max_width  	556
+				    label      	"order")
+				icon       	"Package Specification"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"573132B40179"
+				autoResize 	TRUE
+				width      	282
+				height     	312)
+			    (object ModView "Component View::exp9::warehouse" "PackageType" "Specification" @358
+				location   	(1360, 848)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@358
+				    location   	(1298, 652)
+				    anchor_loc 	3
+				    nlines     	1
+				    max_width  	567
+				    label      	"warehouse")
+				icon       	"Package Specification"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"573132CB037B"
+				autoResize 	TRUE
+				width      	282
+				height     	312)
+			    (object ModView "Component View::exp9::paypal" "PackageType" "Specification" @359
+				location   	(1904, 832)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@359
+				    location   	(1842, 636)
+				    anchor_loc 	3
+				    nlines     	1
+				    max_width  	578
+				    label      	"paypal")
+				icon       	"Package Specification"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"573132D8031F"
+				autoResize 	TRUE
+				width      	282
+				height     	312)
+			    (object ModVisView "" @360
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"573132F4029D"
+				client     	@356
+				supplier   	@357
+				line_style 	0)
+			    (object ModVisView "" @361
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"573132FB009F"
+				client     	@356
+				supplier   	@358
+				line_style 	0)
+			    (object ModVisView "" @362
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"573132FE00DF"
+				client     	@356
+				supplier   	@359
+				line_style 	0))))))
 	physical_presentations 	(list unit_reference_list
 	    (object Module_Diagram "Main"
 		quid       	"3E400AA6011D"
@@ -7137,7 +8160,32 @@
 		max_width  	21600
 		origin_x   	0
 		origin_y   	0
-		items      	(list diagram_item_list))))
+		items      	(list diagram_item_list
+		    (object SubSysView "Component View::exp9" @363
+			location   	(720, 336)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@363
+			    location   	(576, 267)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"exp9")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5731325A00E3"
+			width      	300
+			height     	150)))))
     process_structure 	(object Processes
 	quid       	"3E400AA502EC"
 	ProcsNDevs 	(list
